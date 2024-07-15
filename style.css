@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4e4ba;
+    background-image: url("/currency Converter/money.jpg");
+    background-size: cover;
+}
+.container{
+    background-color: rgb(124, 182, 202);
+    padding: 3rem;
+    border: none;
+    border-radius: 1rem;
+    min-height: 30rem;
+    width:25rem;
+}
+.container h1{
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+ animation: anime 0.5s ease-in-out 0s infinite normal;
+}
+.container h1:hover{
+    font-family:'Courier New', Courier, monospace;
+    font-weight : 900;
+    text-decoration: underline;
+}
+@keyframes anime {
+    0%{
+        color: black;
+    }
+    100%{
+        color: red;
+    }
+}
+form{
+    margin:2rem 0 1rem 0;
+}
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+.amount p{
+    font-size:2rem;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.amount p:hover{
+    font-size:2.5rem;
+    font-weight: 600;
+}
+.amount input:hover{
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+form input{
+    border : 1px solid lightgray;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.dropdown p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.dropdown p:hover{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.dropdown i{
+    font-size: 2.6rem;
+    margin-top: 1.5rem;
+}
+.dropdown i:hover{
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.select-container img{
+    width: 3rem;
+}
+.select-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    width: 9rem;
+    border-radius: 0.5rem;
+    border : 0.1rem solid black;
+}
+.select-container:hover{
+    background-color: lightgray;
+    border-color: white;
+}
+.select-container select:hover{
+    background-color: lightgray;
+    border-color: white;
+}
+.select-container select{
+    font-size: 1.5rem;
+    width: auto;
+   /* border:1px solid black; */
+}
+.msg{
+    margin: 2rem 0 2rem 0;
+    font-size: 1.5rem;
+    background-color : red;
+    color:white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    animation: anime2 3s ease-in-out 0s infinite normal;
+}
+@keyframes anime2 {
+    from{
+        background-color: black;
+        color: red;
+    }
+}
+.msg:hover{
+   font-weight: 900;
+   border: 0.2rem solid white;
+}
+
+form button{
+    height: 3rem;
+    background-color: blue;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+form button:active{
+    opacity: 0.8;
+}
+form button:hover{
+    border: 0.2rem solid white ;
+}
